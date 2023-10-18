@@ -106,13 +106,18 @@ else if (blackFriday>50){
   La scelta deve essere basata sul valore di un'altra variabile booleana chiamata isMale.
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
-isMale = "andrea" || "alessandro" || "giuseppe"
-if("andrea"= isMale){
- gender="male"
-}else{
- gender = "female"
-}
-"male"?console.log(gender="male"):console.log(gender="female")
+let isMale = false
+isMale== true? console.log(gender="male"): console.log(gender="female")
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
+for(n=1; n<101; n++)
+if ( n %3===0 && n %5===0){
+console.log( n+"Fizzbuzz")
+}else if( n % 3===0 && n %5!==0){
+  console.log ( n+ " Fizz")
+}else if ( n %5 ===0 && n % 3!==0){
+  console.log(n+" Buzz")
+}else {
+  console.log( n)
+}
